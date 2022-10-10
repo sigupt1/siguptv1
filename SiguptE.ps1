@@ -2,6 +2,12 @@
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 
+# 7 Zip Entegrasyonu
+
+Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z1900-x64.msi" -OutFile "$env:TEMP\7z1900-x64.exe" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+
+msiexec /i "$env:TEMP\7z1900-x64.exe" /qb;
+
 
 # 7 Zip Modülü
 
@@ -32,20 +38,20 @@ if($SignalProc){
 
 # Geçerliyse Kopyala Deneme 1
 
-$Folder = 'E:\portapps\signal-portable\app'
+$Folder = 'G:\portapps\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app\" -Destination "E:\portapps\signal-portable\" -Recurse -force
+    Copy-Item "$env:TEMP\app\" -Destination "G:\portapps\signal-portable\" -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
-$Folder = 'E:\signal-portable\app'
+$Folder = 'G:\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app" -Destination "E:\signal-portable\" -Recurse -force
+    Copy-Item "$env:TEMP\app" -Destination "G:\signal-portable\" -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
 }
