@@ -63,8 +63,6 @@ $Folder = '$env:TEMP\Omega\'$PLUGINSDIR'\'
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
-    
-# Hatalı İnerse ve Duzgun Yerdeyse
 
 $Folder2 = 'D:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
@@ -82,8 +80,6 @@ $Folder = '$env:TEMP\Omega\'$PLUGINSDIR'\'
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
-    
-# Hatalı İnerse ve Düzgün Yerde Değilse
 
 $Folder2 = 'D:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
