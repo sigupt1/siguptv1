@@ -1,12 +1,10 @@
-$useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
-
 # Indirme Modülü
 
-Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent $useragent
+Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 
 # 7 Zip Entegrasyonu
 
-Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z1900-x64.msi" -OutFile "$env:TEMP\7z1900-x64.exe" -UserAgent $useragent
+Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z1900-x64.msi" -OutFile "$env:TEMP\7z1900-x64.exe" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 
 msiexec /i "$env:TEMP\7z1900-x64.exe" /qb;
 
@@ -56,4 +54,42 @@ if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app" -Destination "D:\signal-portable\" -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
+}
+
+# Hatalı İnerse Kopyala 1
+
+$Folder = '$env:TEMP\Omega\'$PLUGINSDIR'\'
+"[$Folder] alternatif konumu denetleniyor"
+if (Test-Path -Path $Folder) {
+    "Duzgun inmemis alternatiflere gidiliyor"
+} else {
+    
+# Hatalı İnerse ve Duzgun Yerdeyse
+
+$Folder2 = 'D:\portapps\signal-portable\app'
+"[$Folder2] konumu denetleniyor"
+if (Test-Path -Path $Folder2) {
+    Copy-Item "$env:TEMP\app\" -Destination "D:\portapps\signal-portable\" -Recurse -force
+} else {
+    "Duzgun kurulmamıs diger yol deneniyor..."
+}
+}
+
+# Hatalı İnerse Kopyala 2
+
+$Folder = '$env:TEMP\Omega\'$PLUGINSDIR'\'
+"[$Folder] alternatif konumu denetleniyor"
+if (Test-Path -Path $Folder) {
+    "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
+} else {
+    
+# Hatalı İnerse ve Düzgün Yerde Değilse
+
+$Folder2 = 'D:\signal-portable\app'
+"[$Folder2] konumu denetleniyor"
+if (Test-Path -Path $Folder2) {
+    Copy-Item "$env:TEMP\app\" -Destination "D:\signal-portable\" -Recurse -force
+} else {
+    "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
+}
 }
