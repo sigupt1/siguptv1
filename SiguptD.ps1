@@ -58,8 +58,8 @@ if (Test-Path -Path $Folder) {
 
 # Hatalı İnerse Kopyala 1
 
-$Folder3 = '$env:TEMP\Omega\$PLUGINSDIR\'
-"[$Folder3] alternatif konumu denetleniyor"
+$Folder = '$env:TEMP\Omega\"$PLUGINSDIR"\'
+"[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
@@ -75,8 +75,8 @@ if (Test-Path -Path $Folder2) {
 
 # Hatalı İnerse Kopyala 2
 
-$Folder4 = '$env:TEMP\Omega\$PLUGINSDIR\'
-"[$Folder4] alternatif konumu denetleniyor"
+$Folder = '$env:TEMP\Omega\"$PLUGINSDIR"\'
+"[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
