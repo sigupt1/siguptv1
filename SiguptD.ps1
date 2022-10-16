@@ -13,7 +13,7 @@ msiexec /i "$env:TEMP\7z1900-x64.exe" /qb;
 
 set-alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
-sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
+sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR\app-64.7z -r ;
 
 # Signal Açıksa Kapat
 
@@ -58,7 +58,7 @@ if (Test-Path -Path $Folder) {
 
 # Hatalı İnerse Kopyala 1
 
-$Folder = $env:TEMP\Omega\'$PLUGINSDIR'\
+$Folder = $env:TEMP\Omega\'$PLUGINSDIR\
 "[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
@@ -75,7 +75,7 @@ if (Test-Path -Path $Folder2) {
 
 # Hatalı İnerse Kopyala 2
 
-$Folder = $env:TEMP\Omega\'$PLUGINSDIR'\
+$Folder = $env:TEMP\Omega\'$PLUGINSDIR\
 "[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
