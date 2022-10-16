@@ -59,12 +59,11 @@ if (Test-Path -Path $Folder) {
 # Hatalı İnerse Kopyala 1
 
 $Folder = '$env:TEMP\Omega\'$PLUGINSDIR'\'
+$Folder2 = 'D:\portapps\signal-portable\app'
 "[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
-
-$Folder2 = 'D:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
     Copy-Item "$env:TEMP\app\" -Destination "D:\portapps\signal-portable\" -Recurse -force
@@ -76,12 +75,13 @@ if (Test-Path -Path $Folder2) {
 # Hatalı İnerse Kopyala 2
 
 $Folder = '$env:TEMP\Omega\'$PLUGINSDIR'\'
+$Folder2 = 'D:\signal-portable\app'
 "[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
 
-$Folder2 = 'D:\signal-portable\app'
+
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
     Copy-Item "$env:TEMP\app\" -Destination "D:\signal-portable\" -Recurse -force
