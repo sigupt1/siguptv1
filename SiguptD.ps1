@@ -70,7 +70,7 @@ if (Test-Path -Path $Folder) {
 $Folder2 = 'D:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\app\" -Destination "D:\portapps\signal-portable\" -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination "D:\portapps\signal-portable\" -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
@@ -90,7 +90,7 @@ if (Test-Path -Path $Folder) {
 $Folder2 = 'D:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\app\" -Destination "D:\signal-portable\" -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination "D:\signal-portable\" -Recurse -force
 } else {
     "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
 }
