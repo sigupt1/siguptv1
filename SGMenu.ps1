@@ -11,7 +11,7 @@ Switch ($MENU)
 {
 D {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Emin misin? Tekrar yazabilir misin?"
+$Harf = Read-Host "Tekrar yazabilir misin?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -115,7 +115,7 @@ DisplayMenu
 
 E {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Tekrar yazar mısın?"
+$Harf = Read-Host "Tekrar yazabilir misin?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -218,7 +218,7 @@ DisplayMenu
 }
 F {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Tekrar yazar mısın?"
+$Harf = Read-Host "Tekrar yazabilir misin?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -321,7 +321,7 @@ DisplayMenu
 }
 G {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Tekrar yazar mısın?"
+$Harf = Read-Host "Tekrar yazabilir misin?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
