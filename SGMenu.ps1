@@ -3,7 +3,7 @@ Clear-Host
 Write-Host @"
 
 FLASH SÜRÜCÜNÜZÜN HARFI NEDIR?
-Örneðin D,E,F,G bunlardan birisi olabilir.
+Örnegin D,E,F,G bunlardan birisi olabilir.
 "@
 
 $MENU = Read-Host "Harfi Girer Misin?"
