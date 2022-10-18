@@ -1,8 +1,9 @@
 function DisplayMenu {
+Clear-Host
 Write-Host @"
 
-FLASH SÜRÜCÜNÜZÜN HARFI NEDIR?
-Örnegin D,E,F,G bunlardan birisi olabilir.
+FLASH BELLEGINIZIN HARFI NEDİR?
+Ornegin D,E,F,G bunlardan birisi olabilir.
 "@
 
 $MENU = Read-Host "Harfi Girer Misin?"
@@ -10,7 +11,7 @@ Switch ($MENU)
 {
 D {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Emin misin? Tekrar girer?"
+$Harf = Read-Host "Emin misin? Tekrar yazabilir misin?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -28,7 +29,7 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açýksa Kapat
+# Signal Açıksa Kapat
 
 $Process        = "Signal*"
 $SignalProc = Get-Process -Name $Process
@@ -56,7 +57,7 @@ $Folder = '$Harf:\portapps\signal-portable\app'
 if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
@@ -69,7 +70,7 @@ if (Test-Path -Path $Folder) {
     "Program bu sekilde yuklenmemis..."
 }
 
-# Hatalý Ýnerse Kopyala 1
+# Hatalı İnerse Kopyala 1
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -78,18 +79,18 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
     
-# Hatalý Ýnerse ve Duzgun Yerdeyse
+# Hatalı İnerse ve Duzgun Yerdeyse
 
 $Folder2 = '$Harf:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
     Copy-Item "$env:TEMP\Omega\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 }
 
-# Hatalý Ýnerse Kopyala 2
+# Hatalı İnerse Kopyala 2
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -98,7 +99,7 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
     
-# Hatalý Ýnerse ve Düzgün Yerde Deðilse
+# Hatalı İnerse ve Düzgün Yerde Değilse
 
 $Folder2 = '$Harf:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
@@ -114,7 +115,7 @@ DisplayMenu
 
 E {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Tekrar yazar mýsýn?"
+$Harf = Read-Host "Tekrar yazar mısın?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -132,7 +133,7 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açýksa Kapat
+# Signal Açıksa Kapat
 
 $Process        = "Signal*"
 $SignalProc = Get-Process -Name $Process
@@ -160,7 +161,7 @@ $Folder = '$Harf:\portapps\signal-portable\app'
 if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
@@ -173,7 +174,7 @@ if (Test-Path -Path $Folder) {
     "Program bu sekilde yuklenmemis..."
 }
 
-# Hatalý Ýnerse Kopyala 1
+# Hatalı İnerse Kopyala 1
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -182,18 +183,18 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
     
-# Hatalý Ýnerse ve Duzgun Yerdeyse
+# Hatalı İnerse ve Duzgun Yerdeyse
 
 $Folder2 = '$Harf:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
     Copy-Item "$env:TEMP\Omega\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 }
 
-# Hatalý Ýnerse Kopyala 2
+# Hatalı İnerse Kopyala 2
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -202,7 +203,7 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
     
-# Hatalý Ýnerse ve Düzgün Yerde Deðilse
+# Hatalı İnerse ve Düzgün Yerde Değilse
 
 $Folder2 = '$Harf:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
@@ -217,7 +218,7 @@ DisplayMenu
 }
 F {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Tekrar yazar mýsýn?"
+$Harf = Read-Host "Tekrar yazar mısın?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -235,7 +236,7 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açýksa Kapat
+# Signal Açıksa Kapat
 
 $Process        = "Signal*"
 $SignalProc = Get-Process -Name $Process
@@ -263,7 +264,7 @@ $Folder = '$Harf:\portapps\signal-portable\app'
 if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
@@ -276,7 +277,7 @@ if (Test-Path -Path $Folder) {
     "Program bu sekilde yuklenmemis..."
 }
 
-# Hatalý Ýnerse Kopyala 1
+# Hatalı İnerse Kopyala 1
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -285,18 +286,18 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
     
-# Hatalý Ýnerse ve Duzgun Yerdeyse
+# Hatalı İnerse ve Duzgun Yerdeyse
 
 $Folder2 = '$Harf:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
     Copy-Item "$env:TEMP\Omega\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 }
 
-# Hatalý Ýnerse Kopyala 2
+# Hatalı İnerse Kopyala 2
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -305,7 +306,7 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
     
-# Hatalý Ýnerse ve Düzgün Yerde Deðilse
+# Hatalı İnerse ve Düzgün Yerde Değilse
 
 $Folder2 = '$Harf:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
@@ -320,7 +321,7 @@ DisplayMenu
 }
 G {
 #SÜRÜCÜ OKUMA KISMI
-$Harf = Read-Host "Tekrar yazar mýsýn?"
+$Harf = Read-Host "Tekrar yazar mısın?"
 # Indirme Modülü
 
 Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
@@ -338,7 +339,7 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açýksa Kapat
+# Signal Açıksa Kapat
 
 $Process        = "Signal*"
 $SignalProc = Get-Process -Name $Process
@@ -366,7 +367,7 @@ $Folder = '$Harf:\portapps\signal-portable\app'
 if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
@@ -379,7 +380,7 @@ if (Test-Path -Path $Folder) {
     "Program bu sekilde yuklenmemis..."
 }
 
-# Hatalý Ýnerse Kopyala 1
+# Hatalı İnerse Kopyala 1
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -388,18 +389,18 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
 } else {
     
-# Hatalý Ýnerse ve Duzgun Yerdeyse
+# Hatalı İnerse ve Duzgun Yerdeyse
 
 $Folder2 = '$Harf:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
     Copy-Item "$env:TEMP\Omega\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
 } else {
-    "Duzgun kurulmamýs diger yol deneniyor..."
+    "Duzgun kurulmamıs diger yol deneniyor..."
 }
 }
 
-# Hatalý Ýnerse Kopyala 2
+# Hatalı İnerse Kopyala 2
 
 $acayip = "$PLUGINSDIR"
 $Folder = '$env:TEMP\Omega\$acayip\'
@@ -408,7 +409,7 @@ if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
 } else {
     
-# Hatalý Ýnerse ve Düzgün Yerde Deðilse
+# Hatalı İnerse ve Düzgün Yerde Değilse
 
 $Folder2 = '$Harf:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
@@ -422,7 +423,7 @@ Start-Sleep -Seconds 2
 DisplayMenu
 }
 default {
-#YANLIÞ YAZILIRSA
+#YANLIŞ YAZILIRSA
 Write-Host "Geçerli sürücü belirtmedin"
 Start-Sleep -Seconds 2
 DisplayMenu
