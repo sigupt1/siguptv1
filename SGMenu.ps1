@@ -1,7 +1,7 @@
 function DisplayMenu {
 Write-Host @"
 
-FLASH BELLEGINIZIN HARFI NEDİR?
+FLASH BELLEGINIZIN HARFI NEDIR?
 Ornegin D,E,F,G bunlardan birisi olabilir.
 "@
 
