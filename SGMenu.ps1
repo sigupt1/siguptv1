@@ -28,26 +28,6 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açıksa Kapat
-
-$Process        = "Signal*"
-$SignalProc = Get-Process -Name $Process
-
-if($SignalProc){
-
-    while($SignalProc){
-        ForEach ($Proc in Get-Process -Name $Process){$Proc.CloseMainWindow()}
-        sleep 5
-        If (Get-Process -Name $Process){
-            Write-Host "Signal acik kalmis kapatiliyor...."
-            $wshell = new-object -com wscript.shell
-            $wshell.AppActivate("Signal")
-            $wshell.Sendkeys("%(Y)")
-        }
-        $SignalProc = Get-Process -Name $Process
-    }
-}
-
 
 # Geçerliyse Kopyala Deneme 1
 
@@ -132,26 +112,6 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açıksa Kapat
-
-$Process        = "Signal*"
-$SignalProc = Get-Process -Name $Process
-
-if($SignalProc){
-
-    while($SignalProc){
-        ForEach ($Proc in Get-Process -Name $Process){$Proc.CloseMainWindow()}
-        sleep 5
-        If (Get-Process -Name $Process){
-            Write-Host "Signal acik kalmis kapatiliyor...."
-            $wshell = new-object -com wscript.shell
-            $wshell.AppActivate("Signal")
-            $wshell.Sendkeys("%(Y)")
-        }
-        $SignalProc = Get-Process -Name $Process
-    }
-}
-
 
 # Geçerliyse Kopyala Deneme 1
 
@@ -215,6 +175,7 @@ if (Test-Path -Path $Folder2) {
 Start-Sleep -Seconds 2
 DisplayMenu
 }
+
 F {
 #SÜRÜCÜ OKUMA KISMI
 $Harf = Read-Host "Tekrar yazar mısın?"
@@ -235,26 +196,6 @@ set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
-# Signal Açıksa Kapat
-
-$Process        = "Signal*"
-$SignalProc = Get-Process -Name $Process
-
-if($SignalProc){
-
-    while($SignalProc){
-        ForEach ($Proc in Get-Process -Name $Process){$Proc.CloseMainWindow()}
-        sleep 5
-        If (Get-Process -Name $Process){
-            Write-Host "Signal acik kalmis kapatiliyor...."
-            $wshell = new-object -com wscript.shell
-            $wshell.AppActivate("Signal")
-            $wshell.Sendkeys("%(Y)")
-        }
-        $SignalProc = Get-Process -Name $Process
-    }
-}
-
 
 # Geçerliyse Kopyala Deneme 1
 
@@ -318,6 +259,7 @@ if (Test-Path -Path $Folder2) {
 Start-Sleep -Seconds 2
 DisplayMenu
 }
+
 G {
 #SÜRÜCÜ OKUMA KISMI
 $Harf = Read-Host "Tekrar yazar mısın?"
@@ -337,26 +279,6 @@ msiexec /i "$env:TEMP\7z1900-x64.exe" /qb;
 set-alias sz "c:\Program Files\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
-
-# Signal Açıksa Kapat
-
-$Process        = "Signal*"
-$SignalProc = Get-Process -Name $Process
-
-if($SignalProc){
-
-    while($SignalProc){
-        ForEach ($Proc in Get-Process -Name $Process){$Proc.CloseMainWindow()}
-        sleep 5
-        If (Get-Process -Name $Process){
-            Write-Host "Signal acik kalmis kapatiliyor...."
-            $wshell = new-object -com wscript.shell
-            $wshell.AppActivate("Signal")
-            $wshell.Sendkeys("%(Y)")
-        }
-        $SignalProc = Get-Process -Name $Process
-    }
-}
 
 
 # Geçerliyse Kopyala Deneme 1
