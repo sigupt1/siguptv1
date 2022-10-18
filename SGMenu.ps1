@@ -1,5 +1,4 @@
 function DisplayMenu {
-Clear-Host
 Write-Host @"
 
 FLASH BELLEGINIZIN HARFI NEDİR?
