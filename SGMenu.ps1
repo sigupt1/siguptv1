@@ -31,20 +31,20 @@ sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
 # Geçerliyse Kopyala Deneme 1
 
-$Folder = '[$Harf]:\portapps\signal-portable\app'
+$Folder = 'D:\portapps\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app\" -Destination 'D:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
-$Folder = '[$Harf]:\signal-portable\app'
+$Folder = 'D:\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app" -Destination 'D:\signal-portable\' -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
 }
@@ -60,10 +60,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Duzgun Yerdeyse
 
-$Folder2 = '[$Harf]:\portapps\signal-portable\app'
+$Folder2 = 'D:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'D:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
@@ -80,10 +80,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Düzgün Yerde Değilse
 
-$Folder2 = '[$Harf]:\signal-portable\app'
+$Folder2 = 'D:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'D:\signal-portable\' -Recurse -force
 } else {
     "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
 }
@@ -115,20 +115,20 @@ sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
 # Geçerliyse Kopyala Deneme 1
 
-$Folder = '[$Harf]:\portapps\signal-portable\app'
+$Folder = 'E:\portapps\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app\" -Destination 'E:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
-$Folder = '[$Harf]:\signal-portable\app'
+$Folder = 'E:\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app" -Destination 'E:\signal-portable\' -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
 }
@@ -144,10 +144,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Duzgun Yerdeyse
 
-$Folder2 = '[$Harf]:\portapps\signal-portable\app'
+$Folder2 = 'E:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'E:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
@@ -164,10 +164,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Düzgün Yerde Değilse
 
-$Folder2 = '[$Harf]:\signal-portable\app'
+$Folder2 = 'E:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'E:\signal-portable\' -Recurse -force
 } else {
     "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
 }
@@ -199,20 +199,20 @@ sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
 # Geçerliyse Kopyala Deneme 1
 
-$Folder = '[$Harf]:\portapps\signal-portable\app'
+$Folder = 'F:\portapps\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app\" -Destination 'F:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
-$Folder = '[$Harf]:\signal-portable\app'
+$Folder = 'F:\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app" -Destination 'F:\signal-portable\' -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
 }
@@ -228,10 +228,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Duzgun Yerdeyse
 
-$Folder2 = '[$Harf]:\portapps\signal-portable\app'
+$Folder2 = 'F:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'F:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
@@ -248,10 +248,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Düzgün Yerde Değilse
 
-$Folder2 = '[$Harf]:\signal-portable\app'
+$Folder2 = 'F:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'F:\signal-portable\' -Recurse -force
 } else {
     "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
 }
@@ -259,7 +259,6 @@ if (Test-Path -Path $Folder2) {
 Start-Sleep -Seconds 2
 DisplayMenu
 }
-
 G {
 #SÜRÜCÜ OKUMA KISMI
 $Harf = Read-Host "Tekrar yazar mısın?"
@@ -283,20 +282,20 @@ sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
 # Geçerliyse Kopyala Deneme 1
 
-$Folder = '[$Harf]:\portapps\signal-portable\app'
+$Folder = 'G:\portapps\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app\" -Destination 'G:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
-$Folder = '[$Harf]:\signal-portable\app'
+$Folder = 'G:\signal-portable\app'
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app" -Destination 'G:\signal-portable\' -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
 }
@@ -312,10 +311,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Duzgun Yerdeyse
 
-$Folder2 = '[$Harf]:\portapps\signal-portable\app'
+$Folder2 = 'G:\portapps\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'G:\portapps\signal-portable\' -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
@@ -332,10 +331,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Düzgün Yerde Değilse
 
-$Folder2 = '[$Harf]:\signal-portable\app'
+$Folder2 = 'G:\signal-portable\app'
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '[$Harf]:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination 'G:\signal-portable\' -Recurse -force
 } else {
     "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
 }
@@ -343,6 +342,7 @@ if (Test-Path -Path $Folder2) {
 Start-Sleep -Seconds 2
 DisplayMenu
 }
+
 default {
 #YANLIŞ YAZILIRSA
 Write-Host "Geçerli sürücü belirtmedin"
