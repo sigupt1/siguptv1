@@ -31,20 +31,20 @@ sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
 
 # Geçerliyse Kopyala Deneme 1
 
-$Folder = '$Harf:\portapps\signal-portable\app'
+$Folder = $Harf:\portapps\signal-portable\app
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app\" -Destination $Harf:\portapps\signal-portable\ -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
-$Folder = '$Harf:\signal-portable\app'
+$Folder = $Harf:\signal-portable\app
 "[$Folder] konumu denetleniyor"
 if (Test-Path -Path $Folder) {
-    Copy-Item "$env:TEMP\app" -Destination '$Harf:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\app" -Destination $Harf:\signal-portable\ -Recurse -force
 } else {
     "Program bu sekilde yuklenmemis..."
 }
@@ -52,7 +52,7 @@ if (Test-Path -Path $Folder) {
 # Hatalı İnerse Kopyala 1
 
 $acayip = "$PLUGINSDIR"
-$Folder = '$env:TEMP\Omega\$acayip\'
+$Folder = $env:TEMP\Omega\$acayip\
 "[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatiflere gidiliyor"
@@ -60,10 +60,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Duzgun Yerdeyse
 
-$Folder2 = '$Harf:\portapps\signal-portable\app'
+$Folder2 = $Harf:\portapps\signal-portable\app
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '$Harf:\portapps\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination $Harf:\portapps\signal-portable\ -Recurse -force
 } else {
     "Duzgun kurulmamıs diger yol deneniyor..."
 }
@@ -72,7 +72,7 @@ if (Test-Path -Path $Folder2) {
 # Hatalı İnerse Kopyala 2
 
 $acayip = "$PLUGINSDIR"
-$Folder = '$env:TEMP\Omega\$acayip\'
+$Folder = $env:TEMP\Omega\$acayip\
 "[$Folder] alternatif konumu denetleniyor"
 if (Test-Path -Path $Folder) {
     "Duzgun inmemis alternatif yukleme denemesi yapiliyor..."
@@ -80,10 +80,10 @@ if (Test-Path -Path $Folder) {
     
 # Hatalı İnerse ve Düzgün Yerde Değilse
 
-$Folder2 = '$Harf:\signal-portable\app'
+$Folder2 = $Harf:\signal-portable\app
 "[$Folder2] konumu denetleniyor"
 if (Test-Path -Path $Folder2) {
-    Copy-Item "$env:TEMP\Omega\" -Destination '$Harf:\signal-portable\' -Recurse -force
+    Copy-Item "$env:TEMP\Omega\" -Destination $Harf:\signal-portable\ -Recurse -force
 } else {
     "Duzgun inmemis 2. alternatif yukleme denemesi yapiliyor..."
 }
